@@ -20,21 +20,8 @@ public class Main {
 
         matrizDecimal.imprimeMatriz();
 
-
-
-
-//        System.out.println(ordemMatriz);
-//
-////        System.out.println(Arrays.deepToString(matriz));
-////        System.out.println(Arrays.deepToString(matriz));
-//        System.out.println();
-//        imprimeMatriz(matriz, ordemMatriz);
-//        int[][] matrizAscii = geraMatrizAscii(matriz, ordemMatriz);
-//        System.out.println(Arrays.deepToString(matrizAscii));
-//
 //        int[][] matrizChave = geraMatrizChave(ordemMatriz);
 //
-//        System.out.println(Arrays.deepToString(matrizChave));
 //    }
 //
 //    static void subsituiVazio(char[][] matriz, int ordemMatriz){
