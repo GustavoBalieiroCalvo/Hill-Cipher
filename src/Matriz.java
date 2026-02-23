@@ -1,3 +1,5 @@
 public class Matriz {
-    int ordemMatriz;
+    static int ordemMatriz;
+
+
 }
