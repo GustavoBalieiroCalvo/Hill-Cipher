@@ -20,19 +20,9 @@ public class Main {
 
         matrizDecimal.imprimeMatriz();
 
+        Chave chave = new Chave();
+
 //        int[][] matrizChave = geraMatrizChave(ordemMatriz);
-//
-//    }
-//
-//    static void subsituiVazio(char[][] matriz, int ordemMatriz){
-//        for (int i = 0; i < ordemMatriz; i++) {
-//            for (int j = 0; j < ordemMatriz; j++) {
-//                if (matriz[i][j] == ' ' || matriz[i][j] == '\u0000') {
-//                    matriz[i][j] = '*';
-//                }
-//            }
-//        }
-//    }
 
 //    static int[][] geraMatrizAscii(char[][] matriz, int ordemMatriz) {
 //        int[][] matrizAscii = new int[ordemMatriz][ordemMatriz];

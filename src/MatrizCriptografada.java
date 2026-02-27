@@ -1,14 +1,12 @@
 public class MatrizCriptografada extends Matriz {
-    int[][] matrizAleatoria;
+    int[] chaveAleatoria = new int[ordemMatriz];
 
 
 
-    private void geraMatrizAleatoria() {
-        for (int i = 0; i < ordemMatriz; i++) {
-            for (int j = 0; j < ordemMatriz; j++) {
-                int numeroAleatorio = (int) (Math.random() * 255) + 1;
-                matrizAleatoria[i][j] = numeroAleatorio;
-            }
+    private void geraChaveAleatoria() {
+        for (int i = 0; i < ordemMatriz * ordemMatriz; i++) {
+            int numeroAleatorio = (int) (Math.random() * 255) + 1;
+            chaveAleatoria[i] = numeroAleatorio;
         }
     }
 }
