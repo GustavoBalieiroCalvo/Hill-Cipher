@@ -7,7 +7,7 @@ public class Main {
 
 
         Scanner sc = new Scanner(System.in);
-
+        System.out.print("Digíte a mensagem: ");
         String entrada = sc.nextLine();
 
         MatrizMensagem matrizMensagem = new MatrizMensagem(entrada);
@@ -20,30 +20,12 @@ public class Main {
 
         matrizDecimal.imprimeMatriz();
 
-        Chave chave = new Chave();
+        MatrizChave matrizChave = new MatrizChave();
 
-//        int[][] matrizChave = geraMatrizChave(ordemMatriz);
+        var matrizCriptografada = new MatrizCriptografada(matrizDecimal.matrizDecimal, matrizChave.chaveAleatoria);
 
-//    static int[][] geraMatrizAscii(char[][] matriz, int ordemMatriz) {
-//        int[][] matrizAscii = new int[ordemMatriz][ordemMatriz];
-//        for (int i = 0; i < ordemMatriz; i++) {
-//            for (int j = 0; j < ordemMatriz; j++) {
-//                int ascii = matriz[i][j];
-//                matrizAscii[i][j] = ascii;
-//            }
-//
-//        }
-//        return matrizAscii;
-//    }
-//
-//    static int[][] geraMatrizChave(int ordemMatriz) {
-//        int[][] matrizChave = new int[ordemMatriz][ordemMatriz];
-//        for (int i = 0; i < ordemMatriz; i++) {
-//            for (int j = 0; j < ordemMatriz; j++) {
-//                int numeroAleatorio = (int) (Math.random() * 100) + 1;
-//                matrizChave[i][j] = numeroAleatorio;
-//            }
-//        }
-//        return matrizChave;
+        System.out.println(Arrays.deepToString(matrizCriptografada.matrizCriptografada));
+//        System.out.println(Arrays.deepToString(matrizCriptografada.getMatrizCriptografadaAscii));
+        System.out.println(matrizCriptografada.getMensagemCriptografada());
     }
 }
